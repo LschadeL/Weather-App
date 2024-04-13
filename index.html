@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./Develop/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <aside>
+        <div class = "search" id = "search-form">
+            <form>
+                <label for="search-city">Search for a City:</label>
+                <button type="btn" id = "clear-btn">Clear</button>
+                <input type="text" id="search-input" name="search-input" placeholder="Minneapolis">
+                <input type="submit" value="Search" id = "search-btn">
+            </form>
+
+            <hr>
+
+            <div class = "search-history" id = "search-history">
+                <h3>Search History</h3>
+                <div class = "search-blank" id = "search-blank">Find a city's forecast!</div>
+            </div>
+        </div>
+    </aside>
+
+    <section id = results>
+        <div class = "current" id = "current">
+            <h2>City Name</h2>
+        </div>
+
+        <div class = "forecast" id = "forecast">
+            <h2>5-Day Forecast:</h2>
+        </div>
+    </section>
+    <script src="./Develop/script.js"></script>
+</body>
+</html>
